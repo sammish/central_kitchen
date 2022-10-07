@@ -1,0 +1,200 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-10-07 07:53:24.659866",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "today_note",
+  "column_break_3",
+  "status",
+  "posting_date",
+  "posting_time",
+  "column_break_6",
+  "bom",
+  "get_item",
+  "section_break_9",
+  "finished_goods",
+  "section_break_12",
+  "operations",
+  "section_break_10",
+  "total_operation_time",
+  "column_break_12",
+  "total_operating_cost",
+  "section_break_11",
+  "bom_materials",
+  "section_break_17",
+  "total_materials_cost",
+  "column_break_19",
+  "grand_total",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Series",
+   "options": "CK.YY.MM.###",
+   "reqd": 1
+  },
+  {
+   "description": "Please write, if there any important note!.",
+   "fieldname": "today_note",
+   "fieldtype": "Data",
+   "label": "Today Note"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Posting Date",
+   "reqd": 1
+  },
+  {
+   "default": "Now",
+   "fieldname": "posting_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Posting Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "BOM ",
+   "options": "BOM",
+   "reqd": 1
+  },
+  {
+   "fieldname": "get_item",
+   "fieldtype": "Button",
+   "label": "Get Item"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Central Kitchen",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "operations",
+   "fieldtype": "Table",
+   "label": "Operations",
+   "options": "Operations Items"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "bom_materials",
+   "fieldtype": "Table",
+   "label": "BOM Materials",
+   "options": "BOM Materials Items"
+  },
+  {
+   "fieldname": "total_operation_time",
+   "fieldtype": "Float",
+   "label": "Total Operation Time"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_operating_cost",
+   "fieldtype": "Currency",
+   "label": "Total Operating Cost",
+   "options": "currency"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_materials_cost",
+   "fieldtype": "Currency",
+   "label": "Total Materials Cost",
+   "options": "currency"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total",
+   "options": "currency"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "To Production\nTo Manufacturing Entry\nTo Material Transfer\nTo Sales Invoice"
+  },
+  {
+   "fieldname": "finished_goods",
+   "fieldtype": "Table",
+   "label": "Finished Goods",
+   "options": "BOM Finished Goods Items"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-10-07 11:33:47.309004",
+ "modified_by": "Administrator",
+ "module": "Central Kitchen",
+ "name": "Central Kitchen",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1
+}
