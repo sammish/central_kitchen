@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include central_kitchen *.css
+recursive-include central_kitchen *.csv
+recursive-include central_kitchen *.html
+recursive-include central_kitchen *.ico
+recursive-include central_kitchen *.js
+recursive-include central_kitchen *.json
+recursive-include central_kitchen *.md
+recursive-include central_kitchen *.png
+recursive-include central_kitchen *.py
+recursive-include central_kitchen *.svg
+recursive-include central_kitchen *.txt
+recursive-exclude central_kitchen *.pyc
